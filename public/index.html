@@ -79,7 +79,7 @@
             <div class="container">
 
                 <header>
-                    <h2>My Skills</h2>
+                    <h2>My Project</h2>
                 </header>
 
                 <p></p>
@@ -87,44 +87,50 @@
                 <div class="row">
                     <div class="col-4 col-12-mobile">
                         <article class="item">
-                            <a href="#" class="image fit"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcTdRDuxdygIx82De1gJJ4qCmd0nIvFFKYAeqw&usqp=CAU" alt="" /></a>
-                            <header>
-                                <h3>HTML</h3>
-                            </header>
+                            <a href="https://hayashibli.github.io/PadWeb/HTML" class="image fit"><img src="images/progect5.png" alt="" />
+                                <header>
+                                    <h3> PAD WEB </h3>
+                                </header>
+                            </a>
                         </article>
                         <article class="item">
-                            <a href="#" class="image fit"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcS5HtGIX5lSJPodeLDwXprk13zNgLQ5i8OVWw&usqp=CAU" alt="" /></a>
-                            <header>
-                                <h3>CSS</h3>
-                            </header>
-                        </article>
-                    </div>
-                    <div class="col-4 col-12-mobile">
-                        <article class="item">
-                            <a href="#" class="image fit"><img src="https://www.pngitem.com/pimgs/m/116-1167737_logo-javascript-pattern-copyright-framework-free-download-javascript.png" alt="" /></a>
-                            <header>
-                                <h3> javascript</h3>
-                            </header>
-                        </article>
-                        <article class="item">
-                            <a href="#" class="image fit"><img src="https://pngimg.com/uploads/github/github_PNG83.png" alt="" /></a>
-                            <header>
-                                <h3>GitHub</h3>
+                            <a href="https://abdullahmou.github.io/My-Cars-Garage" class="image fit"><img src="images/progect0.png" alt="" />
+                                <header>
+                                    <h3>My-Cars-Garage</h3>
+                            </a>
                             </header>
                         </article>
                     </div>
                     <div class="col-4 col-12-mobile">
                         <article class="item">
-                            <a href="#" class="image fit"><img src="https://www.coops.tech/images/technologies/java.png" alt="" /></a>
+                            <a href="https://abdullahmou.github.io/bus-mall" class="image fit"><img src="images/progect1.png" alt="" /></a>
                             <header>
-                                <h3>java</h3>
+                                <h3> Bus Mall</h3>
                             </header>
+                            </a>
                         </article>
                         <article class="item">
-                            <a href="#" class="image fit"><img src="https://nescitech.org/wp-content/uploads/2018/07/Python.LARGE_.jpg" alt="" /></a>
+                            <a href="https://abdullahmou.github.io/newshub" class="image fit"><img src="images/progect3.png" alt="" />
+                                <header>
+                                    <h3>News Hub </h3>
+                                </header>
+                            </a>
+                        </article>
+                    </div>
+                    <div class="col-4 col-12-mobile">
+                        <article class="item">
+                            <a href="https://abdullahmou.github.io/about-me" class="image fit"><img src="images/progect4.png" alt="" /></a>
                             <header>
-                                <h3>Python</h3>
+                                <h3>About Me</h3>
                             </header>
+                            </a>
+                        </article>
+                        <article class="item">
+                            <a href="https://abdullahmou.github.io/choclate-pizza/." class="image fit"><img src="images/progect6.png" alt="" />
+                                <header>
+                                    <h3> Chocolate Pizza </h3>
+                                </header>
+                            </a>
                         </article>
                     </div>
                 </div>
@@ -194,6 +200,28 @@
     <script src="assets/js/breakpoints.min.js"></script>
     <script src="assets/js/util.js"></script>
     <script src="assets/js/main.js"></script>
+    <script>
+        $(function() {
+            var top = $('#top');
+            var backgrounds = [
+                'url(https://payform.me/wp-content/uploads/2019/03/embed-stripe-form.jpg)',
+                'url(https://pngimg.com/uploads/github/github_PNG15.png)',
+                'url(https://www.bestwebsitebuilders.uk/wp-content/uploads/2018/06/html-1080x500.png)',
+                'url(https://res.cloudinary.com/practicaldev/image/fetch/s--zPAa0uAq--/c_imagga_scale,f_auto,fl_progressive,h_420,q_auto,w_1000/https://thepracticaldev.s3.amazonaws.com/i/elytski1o23ybosxmors.jpg)',
+            ];
+            var current = 0;
+
+            function nextBackground() {
+                top.css(
+                    'background',
+                    backgrounds[current = ++current % backgrounds.length]);
+
+                setTimeout(nextBackground, 5000);
+            }
+            setTimeout(nextBackground, 5000);
+            top.css('background', backgrounds[0]);
+        });
+    </script>
 
 </body>
 
